@@ -1,0 +1,19 @@
+.scarycat {
+  height: 25%;
+  width: 25%;
+}
+.scarycat1 {
+  height: 26.9%;
+  width: 26.9%;
+}
+.scarycat2 {
+  height: 28.19%;
+  width: 28.19%;
+}
+
+.notfoundpics {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fee8a0;
+}

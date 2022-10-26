@@ -6,4 +6,4 @@ const CatShow = () => {
     )
 }
 
-export default CatSCatShowhow
+export default CatShow
