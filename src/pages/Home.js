@@ -7,7 +7,9 @@ import '../stylesheets/home.css'
         <>
 <div className="home-body">
     <div className="home-intro">
-        <p>Paws here to find your love..</p>            
+        <div className="p">
+        <p>Paws here to find your love..</p> 
+        </div>           
     <div className="button-container">
         <div>
             <button className="button1">Create Account</button>
