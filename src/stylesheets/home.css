@@ -1,0 +1,91 @@
+body {
+  height: 30vw;
+}
+
+.home-body {
+  background-image: url(/src/assets/homebackground.png);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  position: relative;
+  background-position: center;
+  background-color: #fee8a0;
+  padding-bottom: 346px;
+}
+
+.home-intro {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 0 30% 0 32%;
+  position: relative;
+  top: 13px;
+  font-family: fredoka one;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+
+.button-container {
+  flex-direction: row;
+  display: flex;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.button1,
+.button2 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #545454 0, #fee8a0 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #1e1d1d;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: fredoka one;
+  font-weight: bold;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button1:focus,
+.button2:focus {
+  box-shadow: #545454 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #545454 0 -3px 0 inset;
+}
+
+.button1:hover,
+.button2:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #545454 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button1:active,
+.button2:active {
+  box-shadow: #545454 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.button2 {
+  margin-left: 15px;
+  border-radius: 8px;
+  border: none;
+}
