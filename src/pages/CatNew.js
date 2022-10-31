@@ -20,6 +20,7 @@ const CatNew = ({ createCat }) => {
 
   return (
     <>
+    <h1>Add a New Cat</h1>
       <Form>
         <FormGroup>
           <Label for="name">Name</Label>
