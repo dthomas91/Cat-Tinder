@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from 'react-router-dom';
+import '../stylesheets/catshow.css';
 
 const CatShow = ({ cats }) => {
   const { id } = useParams()
