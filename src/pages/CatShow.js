@@ -1,6 +1,7 @@
 import React from "react";
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import '../stylesheets/catshow.css';
+import { NavLink } from "react-router-dom";
 
 const CatShow = ({ cats }) => {
   const { id } = useParams()
@@ -20,6 +21,9 @@ const CatShow = ({ cats }) => {
           {currentCat.enjoys}
         </>
       )}</p>
+     <NavLink to={`/catedit/${currentCat.id}`} className="nav-link">
+      Edit Cat Profile
+     </NavLink>
     </>
   )
 }
