@@ -2,6 +2,10 @@ body {
   height: 30vw;
 }
 
+.p {
+  padding-top: 0px;
+}
+
 .home-body {
   background-image: url(/src/assets/homebackground.png);
   background-repeat: no-repeat;
@@ -9,19 +13,20 @@ body {
   position: relative;
   background-position: center;
   background-color: #fee8a0;
-  padding-bottom: 346px;
+  padding-bottom: 400px;
+  height: 70vh;
 }
+
 
 .home-intro {
   display: flex;
   height: auto;
   flex-direction: column;
   align-items: center;
-  font-size: 30px;
-  background-color: rgba(255, 255, 255, 0.75);
+  font-size: 27px;
+  background-color: transparent;
   margin: 0 30% 0 32%;
   position: relative;
-  top: 13px;
   font-family: fredoka one;
   font-weight: bold;
   font-style: oblique;

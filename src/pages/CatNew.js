@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, FormGroup, Input, Label, Button } from "reactstrap";
 import { useNavigate } from "react-router-dom";
+import '../stylesheets/catnew.css'
 
 const CatNew = ({ createCat }) => {
   const navigate = useNavigate()
@@ -20,28 +21,30 @@ const CatNew = ({ createCat }) => {
 
   return (
     <>
-    <h1>Add a New Cat</h1>
+    <div className="bodycontainer">
+    <h1>Create Cat Profile</h1>
       <Form>
         <FormGroup>
-          <Label for="name">Name</Label>
+          <Label for="name" className="label">Name</Label>
           <Input type="text" name="name" placeholder="What is your name?" onChange={handleChange} value={newCat.name} />
         </FormGroup>
         <FormGroup>
-          <Label for="age">Age</Label>
+          <Label for="age" className="label">Age</Label>
           <Input type="number" name="age" placeholder="How old are you?" onChange={handleChange} value={newCat.age} />
         </FormGroup>
         <FormGroup>
-          <Label for="enjoys">Enjoys</Label>
+          <Label for="enjoys" className="label">Enjoys</Label>
           <Input type="text" name="enjoys" placeholder="What do you ennjoy?" onChange={handleChange} value={newCat.enjoys} />
         </FormGroup>
         <FormGroup>
-          <Label for="image">Image</Label>
+          <Label for="image" className="label">Image</Label>
           <Input type="url" name="image" placeholder="Upload a photo of you!" onChange={handleChange} value={newCat.image} />
         </FormGroup>
-        <Button onClick={handleSubmit} name="submit">
+        <Button onClick={handleSubmit} name="submit" className="button1">
           Submit Cat
         </Button>
       </Form>
+      </div>
     </>
   )
 }

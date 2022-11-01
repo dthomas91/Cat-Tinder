@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import '../stylesheets/catshow.css';
 import { NavLink } from "react-router-dom";
 import { Button } from "reactstrap";
+import '../components/Header'
 
 
 const CatShow = ({ cats, deleteCat }) => {
@@ -18,25 +19,33 @@ const CatShow = ({ cats, deleteCat }) => {
 
   return (
     <>
+      <div className="catContainer">
       <p>{currentCat && (
         <>
-          <img
+        <div className="catcontent">
+          <img className="catpics"
             alt={"picture"}
             src={currentCat.image}
           />
+          <br/>
           {currentCat.name}
           <br />
           {currentCat.age}
           <br />
           {currentCat.enjoys}
+          </div>
         </>
       )}</p>
+    
+      <div className="btn">
      <NavLink to={`/catedit/${currentCat.id}`} className="nav-link">
-      Edit Cat Profile
+      <Button className="button1">Edit Cat Profile</Button>
      </NavLink>
      <NavLink to="/catindex">
-      <Button onClick={handleDelete}>Delete Cat Profile</Button>
+      <Button onClick={handleDelete} className="button2">Delete Cat Profile</Button>
     </NavLink>
+    </div>
+    </div>
     </>
   )
 }
