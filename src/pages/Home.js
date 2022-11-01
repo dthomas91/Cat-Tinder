@@ -11,12 +11,6 @@ const Home = () => {
                         <p>Paws here to find your love..</p>
                     </div>
                     <div className="button-container">
-                        <div>
-                            <button className="button1">CREATE ACCOUNT</button>
-                        </div>
-                        <div>
-                            <button className="button2">LOG IN</button>
-                        </div>
                     </div>
                 </div>
             </div>

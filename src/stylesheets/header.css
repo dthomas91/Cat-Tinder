@@ -22,6 +22,7 @@
   font-family: fredoka one;
   font-weight: bold;
   font-size: 18px;
+  text-decoration: none;
 }
 
 .nav-bar ul {
@@ -29,6 +30,11 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
-  margin-top: 10%;
+  margin-top: 14%;
   font-weight: bold;
+}
+
+.links, .links:hover {
+  text-decoration: none;
+  color: #fee8a0;
 }
